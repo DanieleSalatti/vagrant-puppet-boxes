@@ -1,0 +1,19 @@
+2.0.0
+-----
+* Dependency is now puppetlabs/apt insted of camptocamp/apt (tests haven't been updated though)
+* Oracle, Percona and MariaDB version updates
+* Removed secure installation scripts which was never executed
+
+1.0.0
+-----
+
+* The following variables have been removed from params.pp.  They
+  were changed into class variables:
+    notify_services
+    multi_password
+    multi_initscript (was initscript)
+    multi_create_instance_script (was create_instance_script)
+
+  Check if the defaults are still sane for your environment.
+
+* Fix some dynamic lookup variables.

@@ -1,0 +1,4 @@
+class {
+    'mysql':
+      type => 'percona';
+  }
